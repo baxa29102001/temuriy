@@ -23,8 +23,17 @@ import Rotation from "@/assets/icon/rotation.svg";
 import Music from "@/assets/icon/music.svg";
 import Full from "@/assets/icon/full.svg";
 
+const redirects = {
+  ru: "https://zkg.technocorp.uz/www/output/rus_out/index.html",
+  uz: "https://zkg.technocorp.uz/www/output/UZB_out/index.html",
+  en: "https://zkg.technocorp.uz/www/output/eng_out/index.html",
+};
+
 function Instruction() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const locale = i18n.language;
+
   return (
     <>
       <div className={styles.wrap}>
@@ -96,7 +105,7 @@ function Instruction() {
               {t("back")}
             </Link>
 
-            <Link href="/video" className={styles.continue_right}>
+            <Link href={redirects[locale]} className={styles.continue_right}>
               {t("continue")}
             </Link>
           </div>
