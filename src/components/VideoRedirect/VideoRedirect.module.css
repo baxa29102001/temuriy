@@ -1,0 +1,22 @@
+.video_wrap{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.skip{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    background: rgba(211, 206, 206, 0.222);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Roboto-Regular";
+    color: #fff;
+}

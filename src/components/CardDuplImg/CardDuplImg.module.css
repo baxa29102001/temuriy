@@ -1,0 +1,64 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    padding: 2.5rem;
+}
+
+.card h3 {
+    text-align: center;
+    font-family: "Roboto-Black";
+    font-size: 2.025rem;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.1013rem;
+    text-transform: uppercase;
+    margin: 1.97rem 0rem 0.56rem;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: "Roboto-Regular";
+    font-size: 1.575rem;
+    font-style: normal;
+    line-height: 2.025rem;
+    letter-spacing: 0.0473rem;
+    max-width: 30rem;
+}
+
+.image {
+    max-width: 6.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stick {
+    height: 6rem;
+    /* width: 1rem; */
+    border: 1px solid #fff;
+}
+
+@media(max-width:1370px) {
+    .card h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:1152px) {
+    .image {
+        gap: 1rem;
+    }
+}
+
+@media(max-width:1052px) {
+    .image {
+        max-width: 5rem;
+        gap: 2rem;
+    }
+
+}
